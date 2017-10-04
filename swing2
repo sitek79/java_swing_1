@@ -1,0 +1,33 @@
+package javaapplicationswing;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.Toolkit;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+        
+public class Swi1 extends JFrame {
+    JLabel l;
+    JTextField field;
+    
+    Swi1() {
+       this.setSize(300,300);
+       this.setVisible(true);
+       //чтобы окно было в центре. иначе в левом верхнем углу
+       this.setLocationRelativeTo(null);
+       Container c = getContentPane();
+       c.setLayout(new FlowLayout(FlowLayout.CENTER,20,30));
+       l = new JLabel("Hello");
+       field = new JTextField(10);
+       c.add(l);
+       c.add(field);
+       this.setVisible(true);
+}
+
+public static void main(String[] args) {
+    new Swi1();
+}
+}

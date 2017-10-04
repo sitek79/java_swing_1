@@ -1,0 +1,12 @@
+package sitek_swing1;
+
+import javax.swing.*;
+
+public class MyClass {
+		
+	public static void main (String [] args) {
+		JFrame window = new JFrame ("First Window");
+		window.setSize (400, 300);
+		window.setVisible (true);
+	}
+}
